@@ -4,22 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My Personal Webpage</title>
-  <link rel="stylesheet" href="templates/style.css">
+
   <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">-->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="templates/style.css">
 
 </head>
 <body>
-  <div class="jumbotron text-center">
-    <h1>My Personal Webpage</h1>
-    <p>Abdulrahman Abuzaid</p>
+  <div class="jumbotron text-center bg-primary">
+    <h1>Abdulrahman Abuzaid</h1>
+    <h6>My Personal Webpage</h6>
   </div>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <nav class="navbar navbar-expand-sm navbar-light bg-primary">
     <a class="navbar-brand" href="index.html">Resume Sections</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -50,6 +51,20 @@
       </ul>
     </div>
   </nav>
-  <p>Education</p>
-  </body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h2 style="text-align:center">About Me</h2>
+        <img src="media/PersonalPic.png" class="rounded-circle img-fluid">
+        <p style="text-align:center">Engineer, Data Scientist</p>
+      </div>
+
+      <div class="col-sm-8">
+        <h2>EDUCATION</h2>
+        <p>An engineer...</p>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
