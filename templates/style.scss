@@ -1,3 +1,5 @@
+$DarkerSeaGreen : #2a7d4f;
+$LightGray : #111111;
 
 h1 {
 }
@@ -11,4 +13,20 @@ h1 {
 
 .container {
   margin-top: 30px;
+}
+
+tr.tableHead {
+  background-color: MediumSeaGreen;
+}
+
+tr.tableHead:hover {
+  background-color: $DarkerSeaGreen;
+}
+
+tr.tableRow {
+  background-color: white;
+}
+
+tr.tableRow:hover {
+  background-color: LightGray;
 }
