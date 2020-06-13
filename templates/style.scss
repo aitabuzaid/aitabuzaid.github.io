@@ -20,7 +20,7 @@ tr.tableHead {
 }
 
 tr.tableHead:hover {
-  background-color: DarkerSeaGreen;
+  background-color: $DarkerSeaGreen;
 }
 
 tr.tableRow {
@@ -29,4 +29,13 @@ tr.tableRow {
 
 tr.tableRow:hover {
   background-color: LightGray;
+}
+
+div.centered h2, .thumbnails, div.centered  p{
+  text-align:center;
+}
+
+.thumbnails img {
+  width: 30px;
+  height: 30px;
 }
