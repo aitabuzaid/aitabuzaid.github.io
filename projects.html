@@ -70,7 +70,7 @@
 
         <div id="accordion">
           <div class="card">
-            <div class="card-header">
+            <div class="card-header green">
               <a class="card-link" data-toggle="collapse" href="#collapseOne">
                 Data Engineering
               </a>
@@ -78,22 +78,45 @@
             <div id="collapseOne" class="collapse show" data-parent="#accordion">
               <div class="card-body">
                 <ul>
+                  <li>Built a postgres database to faciliate analyzing data
+                     collected on songs and user activities for the a music streaming fictitious
+                      startup named Sparkify. The data is on different JSON files
+                       and the aim of this project is to extract data from
+                        these files, transform it, and then load it to the database,
+                         effectively creating an appropriate ETL pipeline.
+                         <a href="https://github.com/aitabuzaid/data-engineering/tree/master/Project%201%20Postgres">
+                           [repo]</a></li>
+                  <li>Built an Apache Cassandra NoSQL database to faciliate
+                    analyzing data collected on songs and user activities for the
+                      music streaming app Sparkify. The data is on multiple
+                      CSV files and the aim of this project was to extract data
+                      from these files, transform it by merging it into one CSV
+                       file, and finally load it to the NoSQL database that is
+                       optimized to answer specific analytical questions
+                       provided by Sparkify. <a href="https://github.com/aitabuzaid/data-engineering/tree/master/project-2-cassandra-db">[repo]</a> </li>
                   <li>Created a data warehouse solution using AWS Redshift for the music
                     app Sparkify. The Redshift cluster reads song and log data hosted as
                     JSON files on AWS S3 and loads them as analytical tables in a star
                     schema. The project utilized proper table design in terms distribution
                     style, distribution keys, and sort keys in order to optimize
-                    performance.</li>
+                    performance.
+                    <a href="https://github.com/aitabuzaid/data-engineering/tree/master/project-3-redshift-dwh">[repo]</a></li>
                   <li>Created a data lake for Sparkify to manage the growing database.
                       Spark/PySpark was utilized to build an ETL pipeline that extracts
                       data from S3, processes it on AWS EMR, and loads back to S3 as a
-                      star schema of fact and dimension tables in parquet files.</li>
+                      star schema of fact and dimension tables in parquet files.
+                    <a href="https://github.com/aitabuzaid/data-engineering/tree/master/project-4-spark-data-lake">[repo]</a></li>
+                  <li>Automated the data warehouse ETL pipeline for Sparkify by
+                     using Apache Airflow. The created DAG included staging the data,
+                      loading facts table, loading dimension tables, and finally
+                       run quality checks to ensure data quality.
+                     <a href="https://github.com/aitabuzaid/data-engineering/tree/master/project-5-airflow">[repo]</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="card">
-            <div class="card-header">
+            <div class="card-header green">
               <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
                 Machine Learning and Data Science
               </a>
@@ -117,7 +140,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card-header">
+            <div class="card-header green">
               <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
                 Web Development
               </a>
