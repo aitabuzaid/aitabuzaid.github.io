@@ -67,33 +67,74 @@
 
       <div class="col-sm-8">
         <h2>PROJECTS</h2>
-        <ul>
-          <li>Created a data warehouse solution using AWS Redshift for the music
-          app Sparkify. The Redshift cluster reads song and log data hosted as
-          JSON files on AWS S3 and loads them as analytical tables in a star
-          schema. The project utilized proper table design in terms distribution
-          style, distribution keys, and sort keys in order to optimize
-          performance.</li>
-          <li>Created a data lake for Sparkify to manage the growing database.
-          Spark/PySpark was utilized to build an ETL pipeline that extracts
-          data from S3, processes it on AWS EMR, and loads back to S3 as a
-          star schema of fact and dimension tables in parquet files.</li>
-          <li>Built a deep learning model through use of Convolutional
-          Neural Networks to classify 99 plant species based on leaf
-          images and pre-extracted features. Achieved high accuracy
-          on training and validation images, and low log-loss score
-          (0.02) on test images.</li>
-          <li>Used the K-means algorithm and Principle Component Analysis
-          to cluster customers purchasing various commodities from
-          wholesale retailers.</li>
-          <li>Designed an actor-critic algorithm based on Neural Networks
-          to teach a quad-copter the takeoff task through a suitable
-          reward function and state space.</li>
-        </ul>
+
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header">
+              <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                Data Engineering
+              </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+              <div class="card-body">
+                <ul>
+                  <li>Created a data warehouse solution using AWS Redshift for the music
+                    app Sparkify. The Redshift cluster reads song and log data hosted as
+                    JSON files on AWS S3 and loads them as analytical tables in a star
+                    schema. The project utilized proper table design in terms distribution
+                    style, distribution keys, and sort keys in order to optimize
+                    performance.</li>
+                  <li>Created a data lake for Sparkify to manage the growing database.
+                      Spark/PySpark was utilized to build an ETL pipeline that extracts
+                      data from S3, processes it on AWS EMR, and loads back to S3 as a
+                      star schema of fact and dimension tables in parquet files.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                Machine Learning and Data Science
+              </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <ul>
+                  <li>Built a deep learning model through use of Convolutional
+                    Neural Networks to classify 99 plant species based on leaf
+                    images and pre-extracted features. Achieved high accuracy
+                    on training and validation images, and low log-loss score
+                    (0.02) on test images.</li>
+                  <li>Used the K-means algorithm and Principle Component Analysis
+                    to cluster customers purchasing various commodities from
+                    wholesale retailers.</li>
+                  <li>Designed an actor-critic algorithm based on Neural Networks
+                    to teach a quad-copter the takeoff task through a suitable
+                    reward function and state space.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                Web Development
+              </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <ul>
+                  <li><a href="https://aitabuzaid.github.io/mypage">This website :)</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
   </div>
-  <footer class="text-center bg-dark text-white" style="margin:20px">&copy; Abdulrahman Abuzaid 2020</footer>
+<footer class="text-center bg-dark text-white" style="margin:20px">&copy; Abdulrahman Abuzaid 2020</footer>
 </body>
 </html>
