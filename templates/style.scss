@@ -39,3 +39,23 @@ div.centered h2, .thumbnails, div.centered  p{
   width: 30px;
   height: 30px;
 }
+
+
+@mixin personalImg() {
+  text-align:center;
+  border: solid;
+  height: auto;
+}
+
+@media (min-width: 601px){
+  div.centered>img {
+    @include personalImg();
+    width: 100%;
+  }
+}
+@media (max-width: 600px){
+  div.centered>img {
+    @include personalImg();
+    width: 50%;
+  }
+}

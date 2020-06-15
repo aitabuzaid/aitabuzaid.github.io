@@ -26,4 +26,17 @@ div.centered h2, .thumbnails, div.centered p {
   width: 30px;
   height: 30px; }
 
+@media (min-width: 601px) {
+  div.centered > img {
+    text-align: center;
+    border: solid;
+    height: auto;
+    width: 100%; } }
+@media (max-width: 600px) {
+  div.centered > img {
+    text-align: center;
+    border: solid;
+    height: auto;
+    width: 50%; } }
+
 /*# sourceMappingURL=style.css.map */
