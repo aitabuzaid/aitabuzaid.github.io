@@ -9,17 +9,15 @@
 
 tr.tableHead {
   background-color: MediumSeaGreen; }
-
-tr.tableHead:hover {
-  background-color: #2a7d4f; }
+  tr.tableHead:hover {
+    background-color: #2a7d4f; }
 
 tr.tableRow {
   background-color: white; }
+  tr.tableRow:hover {
+    background-color: LightGray; }
 
-tr.tableRow:hover {
-  background-color: LightGray; }
-
-div.centered h2, .thumbnails, div.centered p {
+div.centered h2, div.centered .thumbnails, div.centered p {
   text-align: center; }
 
 .thumbnails img {
@@ -27,13 +25,13 @@ div.centered h2, .thumbnails, div.centered p {
   height: 30px; }
 
 @media (min-width: 601px) {
-  div.centered > img {
+  #my-img {
     text-align: center;
     border: solid;
     height: auto;
     width: 100%; } }
 @media (max-width: 600px) {
-  div.centered > img {
+  #my-img {
     text-align: center;
     border: solid;
     height: auto;

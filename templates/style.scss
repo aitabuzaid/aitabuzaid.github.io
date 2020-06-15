@@ -17,22 +17,22 @@ h1 {
 
 tr.tableHead {
   background-color: MediumSeaGreen;
-}
-
-tr.tableHead:hover {
-  background-color: $DarkerSeaGreen;
+  &:hover {
+    background-color: $DarkerSeaGreen;
+  }
 }
 
 tr.tableRow {
   background-color: white;
+  &:hover {
+    background-color: LightGray;
+  }
 }
 
-tr.tableRow:hover {
-  background-color: LightGray;
-}
-
-div.centered h2, .thumbnails, div.centered  p{
-  text-align:center;
+div.centered {
+  h2, .thumbnails, p {
+    text-align:center;
+  }
 }
 
 .thumbnails img {
@@ -41,21 +41,21 @@ div.centered h2, .thumbnails, div.centered  p{
 }
 
 
-@mixin personalImg() {
+@mixin my-img-style() {
   text-align:center;
   border: solid;
   height: auto;
 }
 
 @media (min-width: 601px){
-  div.centered>img {
-    @include personalImg();
+  #my-img {
+    @include my-img-style();
     width: 100%;
   }
 }
 @media (max-width: 600px){
-  div.centered>img {
-    @include personalImg();
+  #my-img {
+    @include my-img-style();
     width: 50%;
   }
 }
