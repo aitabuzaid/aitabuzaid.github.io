@@ -36,5 +36,8 @@ div.centered h2, div.centered .thumbnails, div.centered p {
     border: solid;
     height: auto;
     width: 50%; } }
+footer {
+  margin-top: 20px;
+  padding: 20px; }
 
 /*# sourceMappingURL=style.css.map */
